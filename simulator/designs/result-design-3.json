@@ -1,0 +1,98 @@
+{
+  "schema": "kaistone.cut-job.v1",
+  "coordinate_system": "slab-bottom-left-mm",
+  "slab": {
+    "width_mm": 300,
+    "height_mm": 60
+  },
+  "design_id": 7,
+  "design": {
+    "w_mm": 45.136021721398656,
+    "h_mm": 29.944311803961103,
+    "theta_deg": 67.07648719304702
+  },
+  "cut_lines": [
+    {
+      "line_id": "H001",
+      "x_start_mm": 0.0,
+      "y_start_mm": 29.944312,
+      "x_end_mm": 300.0,
+      "y_end_mm": 29.944312
+    },
+    {
+      "line_id": "H002",
+      "x_start_mm": 0.0,
+      "y_start_mm": 59.888624,
+      "x_end_mm": 300.0,
+      "y_end_mm": 59.888624
+    },
+    {
+      "line_id": "S001",
+      "x_start_mm": 25.374013,
+      "y_start_mm": 60.0,
+      "x_end_mm": 0.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S002",
+      "x_start_mm": 70.510035,
+      "y_start_mm": 60.0,
+      "x_end_mm": 45.136022,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S003",
+      "x_start_mm": 115.646057,
+      "y_start_mm": 60.0,
+      "x_end_mm": 90.272043,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S004",
+      "x_start_mm": 160.782079,
+      "y_start_mm": 60.0,
+      "x_end_mm": 135.408065,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S005",
+      "x_start_mm": 205.9181,
+      "y_start_mm": 60.0,
+      "x_end_mm": 180.544087,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S006",
+      "x_start_mm": 251.054122,
+      "y_start_mm": 60.0,
+      "x_end_mm": 225.680109,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S007",
+      "x_start_mm": 296.190144,
+      "y_start_mm": 60.0,
+      "x_end_mm": 270.81613,
+      "y_end_mm": 0.0
+    }
+  ],
+  "objectives": {
+    "target_area_cm2": 10000,
+    "f1_slab_count": 62,
+    "f2_waste_percent": 9.895526132271836,
+    "f3_traverses_per_slab": 3,
+    "basis": "nominal design geometry"
+  },
+  "metadata": {
+    "title": "추천 7번 설계 (원본 ID 7)",
+    "export_date_kst": "2026-11-06",
+    "recommended_order": 7,
+    "source_design_id": 7,
+    "purpose": "Nominal design geometry playback in the existing simulator",
+    "image_file": "design_07_ID007.png",
+    "source_image_details_sha256": "2ab853bbe4625a27c32fe9d992814be101a2009665c3cc3a7b10b02455916ef4",
+    "execution_mode": "geometry-only; the existing simulator generates its own motion and pulses",
+    "latest_empirical_pulses_applied": false,
+    "note": "This file replays the nominal design shown in the matching PNG. It does not replay the latest experimental pulse corrections."
+  }
+}

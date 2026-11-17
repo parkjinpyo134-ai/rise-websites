@@ -1,0 +1,111 @@
+{
+  "schema": "kaistone.cut-job.v1",
+  "coordinate_system": "slab-bottom-left-mm",
+  "slab": {
+    "width_mm": 300,
+    "height_mm": 60
+  },
+  "design_id": "C",
+  "design": {
+    "w_mm": 45.7199681618098,
+    "h_mm": 19.989934383260934,
+    "theta_deg": 40.47096015230434
+  },
+  "cut_lines": [
+    {
+      "line_id": "H001",
+      "x_start_mm": 0.0,
+      "y_start_mm": 19.989934,
+      "x_end_mm": 300.0,
+      "y_end_mm": 19.989934
+    },
+    {
+      "line_id": "H002",
+      "x_start_mm": 0.0,
+      "y_start_mm": 39.979869,
+      "x_end_mm": 300.0,
+      "y_end_mm": 39.979869
+    },
+    {
+      "line_id": "H003",
+      "x_start_mm": 0.0,
+      "y_start_mm": 59.969803,
+      "x_end_mm": 300.0,
+      "y_end_mm": 59.969803
+    },
+    {
+      "line_id": "S001",
+      "x_start_mm": 24.603148,
+      "y_start_mm": 60.0,
+      "x_end_mm": 0.0,
+      "y_end_mm": 39.008483
+    },
+    {
+      "line_id": "S002",
+      "x_start_mm": 70.323117,
+      "y_start_mm": 60.0,
+      "x_end_mm": 0.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S003",
+      "x_start_mm": 116.043085,
+      "y_start_mm": 60.0,
+      "x_end_mm": 45.719968,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S004",
+      "x_start_mm": 161.763053,
+      "y_start_mm": 60.0,
+      "x_end_mm": 91.439936,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S005",
+      "x_start_mm": 207.483021,
+      "y_start_mm": 60.0,
+      "x_end_mm": 137.159904,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S006",
+      "x_start_mm": 253.202989,
+      "y_start_mm": 60.0,
+      "x_end_mm": 182.879873,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S007",
+      "x_start_mm": 298.922957,
+      "y_start_mm": 60.0,
+      "x_end_mm": 228.599841,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S008",
+      "x_start_mm": 300.0,
+      "y_start_mm": 21.910455,
+      "x_end_mm": 274.319809,
+      "y_end_mm": 0.0
+    }
+  ],
+  "objectives": {
+    "target_area_cm2": 10000,
+    "f1_slab_count": 65,
+    "f2_waste_percent": 13.683523441616286,
+    "f3_traverses_per_slab": 3,
+    "basis": "nominal C geometry"
+  },
+  "metadata": {
+    "title": "C",
+    "export_date_kst": "2026-11-06",
+    "purpose": "C design geometry playback in the existing simulator",
+    "candidate_label": "C",
+    "source_archive_index_zero_based": 1299,
+    "source_comparison_sha256": "10f8d3b244e240c57afaa16c5ebc3ab7f1b78e1c3576d08a01f56268ef1f1fe7",
+    "execution_mode": "geometry-only; the existing simulator generates its own motion and pulses",
+    "latest_empirical_pulses_applied": false,
+    "note": "This file replays the nominal design shown in design_C.png. It does not replay the latest experimental pulse corrections."
+  }
+}
