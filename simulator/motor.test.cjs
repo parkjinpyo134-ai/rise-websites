@@ -36,7 +36,7 @@ test('pulse quantization, remaining turns, unused motors and calibration',()=>{
   assert.ok(motorCSV(p).includes('signed_pulses'));
 });
 test('Colab coordinate input preserves ideal lines and reports pulse-based paths',()=>{
-  const job=JSON.parse(fs.readFileSync('prototype/examples/selected_design_001_simulation.json','utf8'));
+  const job=JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'examples/selected_design_001_simulation.json'),'utf8'));
   job.schema='kaistone.cut-job.v1'; // Regression: legacy coordinate-only import.
   const layout=parseInput(JSON.stringify(job));const p=createPlan({layout});
   assert.equal(layout.exactCoordinates,true);assert.equal(layout.designId,1);

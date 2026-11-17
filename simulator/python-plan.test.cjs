@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const m=require('./model.js');
-const fixture=()=>JSON.parse(fs.readFileSync('prototype/examples/selected_design_001_simulation.json','utf8'));
+const fixture=()=>JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'examples/selected_design_001_simulation.json'),'utf8'));
 test('all measured calibration revisions replay their saved pulses without substituting current defaults',()=>{
  for(const [calibration,ppm,gap] of [
   ['measured-2026-10-19',110200/270,11000],

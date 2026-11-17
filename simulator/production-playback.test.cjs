@@ -112,7 +112,12 @@ else {
   });
 }
 
-const flowPlan=()=>exportsList.length?importJob(readJob(exportsList.find(x=>x.pass_count>=3))):M.createPlan({w:60,h:20,theta:90});
+const flowPlan=()=>{
+  const source=exportsList.find(x=>x.pass_count>=3);
+  const plan=source?importJob(readJob(source)):M.createPlan({w:60,h:10,theta:90});
+  assert.ok(plan.passes.length>=3,'Playback fixture must contain at least three passes');
+  return plan;
+};
 function controlTest(name,body) {test(name,()=>{body();report.playback_checks.push({name,status:'PASS'});});}
 
 controlTest('whole production pauses, resumes, resets and restarts without duplicate frames',()=>{
