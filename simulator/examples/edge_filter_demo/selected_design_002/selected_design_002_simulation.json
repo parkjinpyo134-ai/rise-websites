@@ -1,0 +1,2001 @@
+{
+  "schema": "kaistone.motor-job.v2",
+  "coordinate_system": "slab-bottom-left-mm",
+  "slab": {
+    "width_mm": 300,
+    "height_mm": 60
+  },
+  "design_id": 2,
+  "design": {
+    "w_mm": 30.0,
+    "h_mm": 19.98,
+    "theta_deg": 90.0
+  },
+  "drive": {
+    "x_lead_mm_per_rev": 4,
+    "pulses_per_rev": 1600,
+    "y_lead_mm_per_rev": 10
+  },
+  "cut_lines": [
+    {
+      "line_id": "H001",
+      "x_start_mm": 0.0,
+      "y_start_mm": 19.98,
+      "x_end_mm": 300.0,
+      "y_end_mm": 19.98
+    },
+    {
+      "line_id": "H002",
+      "x_start_mm": 0.0,
+      "y_start_mm": 39.96,
+      "x_end_mm": 300.0,
+      "y_end_mm": 39.96
+    },
+    {
+      "line_id": "H003",
+      "x_start_mm": 0.0,
+      "y_start_mm": 59.94,
+      "x_end_mm": 300.0,
+      "y_end_mm": 59.94
+    },
+    {
+      "line_id": "S001",
+      "x_start_mm": 30.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 30.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S002",
+      "x_start_mm": 60.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 60.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S003",
+      "x_start_mm": 90.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 90.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S004",
+      "x_start_mm": 120.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 120.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S005",
+      "x_start_mm": 150.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 150.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S006",
+      "x_start_mm": 180.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 180.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S007",
+      "x_start_mm": 210.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 210.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S008",
+      "x_start_mm": 240.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 240.0,
+      "y_end_mm": 0.0
+    },
+    {
+      "line_id": "S009",
+      "x_start_mm": 270.0,
+      "y_start_mm": 60.0,
+      "x_end_mm": 270.0,
+      "y_end_mm": 0.0
+    }
+  ],
+  "motor_plan": {
+    "feed": 20,
+    "drive": {
+      "lead": 4,
+      "pulsesPerRev": 1600
+    },
+    "homeX": [
+      160,
+      172,
+      184,
+      196
+    ],
+    "limitX": [
+      164,
+      176,
+      188,
+      200
+    ],
+    "enabledHeads": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "order": "horizontal-first",
+    "passes": [
+      {
+        "index": 0,
+        "family": "horizontal",
+        "angle": 0,
+        "rotation": 90.0,
+        "requestedRotation": 90,
+        "heads": [
+          {
+            "head": 1,
+            "x": -9.960000000000008,
+            "cutId": "H002"
+          },
+          {
+            "head": 2,
+            "x": 10.02000000000001,
+            "cutId": "H001"
+          },
+          {
+            "head": 3,
+            "x": 184.0,
+            "cutId": null
+          },
+          {
+            "head": 4,
+            "x": 196.0,
+            "cutId": null
+          }
+        ],
+        "start": 6.825,
+        "cutIds": [
+          "H002",
+          "H001"
+        ],
+        "rotaryHomedBeforeMove": true,
+        "startY": 162.0,
+        "endY": -162.0,
+        "motorMoves": [
+          {
+            "head": 1,
+            "lineId": "H002",
+            "fromMm": 0,
+            "targetMm": -169.96,
+            "fromPulse": 0,
+            "targetPulse": -67984,
+            "pulses": -67984,
+            "distanceMm": -169.96,
+            "idealDistanceMm": -169.96,
+            "targetQuantizedMm": -169.96,
+            "errorMm": -7.105427357601002e-15,
+            "direction": "X−"
+          },
+          {
+            "head": 2,
+            "lineId": "H001",
+            "fromMm": 0,
+            "targetMm": -161.98,
+            "fromPulse": 0,
+            "targetPulse": -64792,
+            "pulses": -64792,
+            "distanceMm": -161.98,
+            "idealDistanceMm": -161.98,
+            "targetQuantizedMm": -161.98,
+            "errorMm": 1.0658141036401503e-14,
+            "direction": "X−"
+          },
+          {
+            "head": 3,
+            "lineId": null,
+            "fromMm": 0,
+            "targetMm": 0,
+            "fromPulse": 0,
+            "targetPulse": 0,
+            "pulses": 0,
+            "distanceMm": 0.0,
+            "idealDistanceMm": 0,
+            "targetQuantizedMm": 0.0,
+            "errorMm": 0.0,
+            "direction": "정지"
+          },
+          {
+            "head": 4,
+            "lineId": null,
+            "fromMm": 0,
+            "targetMm": 0,
+            "fromPulse": 0,
+            "targetPulse": 0,
+            "pulses": 0,
+            "distanceMm": 0.0,
+            "idealDistanceMm": 0,
+            "targetQuantizedMm": 0.0,
+            "errorMm": 0.0,
+            "direction": "정지"
+          }
+        ],
+        "rotaryMotor": {
+          "fromPulse": 0,
+          "targetPulse": 600,
+          "pulses": 600,
+          "requestedAngleDeg": 90,
+          "targetAngleDeg": 90.0,
+          "fromAngleDeg": 0.0,
+          "errorDeg": 0.0
+        },
+        "positionStart": 8.825,
+        "positionEnd": 11.657666666666666,
+        "cutStart": 11.757666666666665,
+        "cutEnd": 27.957666666666665,
+        "end": 34.910333333333334
+      },
+      {
+        "index": 1,
+        "family": "slanted",
+        "angle": 90.0,
+        "rotation": 0.0,
+        "requestedRotation": 0.0,
+        "heads": [
+          {
+            "head": 1,
+            "x": -120.0,
+            "cutId": "S001"
+          },
+          {
+            "head": 2,
+            "x": -90.0,
+            "cutId": "S002"
+          },
+          {
+            "head": 3,
+            "x": -60.0,
+            "cutId": "S003"
+          },
+          {
+            "head": 4,
+            "x": -30.0,
+            "cutId": "S004"
+          }
+        ],
+        "start": 34.910333333333334,
+        "cutIds": [
+          "S001",
+          "S002",
+          "S003",
+          "S004"
+        ],
+        "rotaryHomedBeforeMove": true,
+        "startY": 42.0,
+        "endY": -42.0,
+        "motorMoves": [
+          {
+            "head": 1,
+            "lineId": "S001",
+            "fromMm": 0,
+            "targetMm": -280.0,
+            "fromPulse": 0,
+            "targetPulse": -112000,
+            "pulses": -112000,
+            "distanceMm": -280.0,
+            "idealDistanceMm": -280.0,
+            "targetQuantizedMm": -280.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          },
+          {
+            "head": 2,
+            "lineId": "S002",
+            "fromMm": 0,
+            "targetMm": -262.0,
+            "fromPulse": 0,
+            "targetPulse": -104800,
+            "pulses": -104800,
+            "distanceMm": -262.0,
+            "idealDistanceMm": -262.0,
+            "targetQuantizedMm": -262.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          },
+          {
+            "head": 3,
+            "lineId": "S003",
+            "fromMm": 0,
+            "targetMm": -244.0,
+            "fromPulse": 0,
+            "targetPulse": -97600,
+            "pulses": -97600,
+            "distanceMm": -244.0,
+            "idealDistanceMm": -244.0,
+            "targetQuantizedMm": -244.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          },
+          {
+            "head": 4,
+            "lineId": "S004",
+            "fromMm": 0,
+            "targetMm": -226.0,
+            "fromPulse": 0,
+            "targetPulse": -90400,
+            "pulses": -90400,
+            "distanceMm": -226.0,
+            "idealDistanceMm": -226.0,
+            "targetQuantizedMm": -226.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          }
+        ],
+        "rotaryMotor": {
+          "fromPulse": 0,
+          "targetPulse": 0,
+          "pulses": 0,
+          "requestedAngleDeg": 0.0,
+          "targetAngleDeg": 0.0,
+          "fromAngleDeg": 0.0,
+          "errorDeg": 0.0
+        },
+        "positionStart": 38.260333333333335,
+        "positionEnd": 42.927,
+        "cutStart": 44.527,
+        "cutEnd": 48.727000000000004,
+        "end": 56.31366666666667
+      },
+      {
+        "index": 2,
+        "family": "slanted",
+        "angle": 90.0,
+        "rotation": 0.0,
+        "requestedRotation": 0.0,
+        "heads": [
+          {
+            "head": 1,
+            "x": 0.0,
+            "cutId": "S005"
+          },
+          {
+            "head": 2,
+            "x": 30.0,
+            "cutId": "S006"
+          },
+          {
+            "head": 3,
+            "x": 60.0,
+            "cutId": "S007"
+          },
+          {
+            "head": 4,
+            "x": 90.0,
+            "cutId": "S008"
+          }
+        ],
+        "start": 56.31366666666667,
+        "cutIds": [
+          "S005",
+          "S006",
+          "S007",
+          "S008"
+        ],
+        "rotaryHomedBeforeMove": false,
+        "startY": 42.0,
+        "endY": -42.0,
+        "motorMoves": [
+          {
+            "head": 1,
+            "lineId": "S005",
+            "fromMm": 0,
+            "targetMm": -160.0,
+            "fromPulse": 0,
+            "targetPulse": -64000,
+            "pulses": -64000,
+            "distanceMm": -160.0,
+            "idealDistanceMm": -160.0,
+            "targetQuantizedMm": -160.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          },
+          {
+            "head": 2,
+            "lineId": "S006",
+            "fromMm": 0,
+            "targetMm": -142.0,
+            "fromPulse": 0,
+            "targetPulse": -56800,
+            "pulses": -56800,
+            "distanceMm": -142.0,
+            "idealDistanceMm": -142.0,
+            "targetQuantizedMm": -142.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          },
+          {
+            "head": 3,
+            "lineId": "S007",
+            "fromMm": 0,
+            "targetMm": -124.0,
+            "fromPulse": 0,
+            "targetPulse": -49600,
+            "pulses": -49600,
+            "distanceMm": -124.0,
+            "idealDistanceMm": -124.0,
+            "targetQuantizedMm": -124.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          },
+          {
+            "head": 4,
+            "lineId": "S008",
+            "fromMm": 0,
+            "targetMm": -106.0,
+            "fromPulse": 0,
+            "targetPulse": -42400,
+            "pulses": -42400,
+            "distanceMm": -106.0,
+            "idealDistanceMm": -106.0,
+            "targetQuantizedMm": -106.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          }
+        ],
+        "rotaryMotor": {
+          "fromPulse": 0,
+          "targetPulse": 0,
+          "pulses": 0,
+          "requestedAngleDeg": 0.0,
+          "targetAngleDeg": 0.0,
+          "fromAngleDeg": 0.0,
+          "errorDeg": 0.0
+        },
+        "positionStart": 56.31366666666667,
+        "positionEnd": 58.980333333333334,
+        "cutStart": 60.580333333333336,
+        "cutEnd": 64.78033333333333,
+        "end": 70.367
+      },
+      {
+        "index": 3,
+        "family": "slanted",
+        "angle": 90.0,
+        "rotation": 0.0,
+        "requestedRotation": 0.0,
+        "heads": [
+          {
+            "head": 1,
+            "x": 120.0,
+            "cutId": "S009"
+          },
+          {
+            "head": 2,
+            "x": 172.0,
+            "cutId": null
+          },
+          {
+            "head": 3,
+            "x": 184.0,
+            "cutId": null
+          },
+          {
+            "head": 4,
+            "x": 196.0,
+            "cutId": null
+          }
+        ],
+        "start": 70.367,
+        "cutIds": [
+          "S009"
+        ],
+        "rotaryHomedBeforeMove": false,
+        "startY": 42.0,
+        "endY": -42.0,
+        "motorMoves": [
+          {
+            "head": 1,
+            "lineId": "S009",
+            "fromMm": 0,
+            "targetMm": -40.0,
+            "fromPulse": 0,
+            "targetPulse": -16000,
+            "pulses": -16000,
+            "distanceMm": -40.0,
+            "idealDistanceMm": -40.0,
+            "targetQuantizedMm": -40.0,
+            "errorMm": 0.0,
+            "direction": "X−"
+          },
+          {
+            "head": 2,
+            "lineId": null,
+            "fromMm": 0,
+            "targetMm": 0,
+            "fromPulse": 0,
+            "targetPulse": 0,
+            "pulses": 0,
+            "distanceMm": 0.0,
+            "idealDistanceMm": 0,
+            "targetQuantizedMm": 0.0,
+            "errorMm": 0.0,
+            "direction": "정지"
+          },
+          {
+            "head": 3,
+            "lineId": null,
+            "fromMm": 0,
+            "targetMm": 0,
+            "fromPulse": 0,
+            "targetPulse": 0,
+            "pulses": 0,
+            "distanceMm": 0.0,
+            "idealDistanceMm": 0,
+            "targetQuantizedMm": 0.0,
+            "errorMm": 0.0,
+            "direction": "정지"
+          },
+          {
+            "head": 4,
+            "lineId": null,
+            "fromMm": 0,
+            "targetMm": 0,
+            "fromPulse": 0,
+            "targetPulse": 0,
+            "pulses": 0,
+            "distanceMm": 0.0,
+            "idealDistanceMm": 0,
+            "targetQuantizedMm": 0.0,
+            "errorMm": 0.0,
+            "direction": "정지"
+          }
+        ],
+        "rotaryMotor": {
+          "fromPulse": 0,
+          "targetPulse": 0,
+          "pulses": 0,
+          "requestedAngleDeg": 0.0,
+          "targetAngleDeg": 0.0,
+          "fromAngleDeg": 0.0,
+          "errorDeg": 0.0
+        },
+        "positionStart": 70.367,
+        "positionEnd": 71.03366666666668,
+        "cutStart": 72.63366666666667,
+        "cutEnd": 76.83366666666667,
+        "end": 80.42033333333335
+      }
+    ],
+    "cuts": [
+      {
+        "id": "H002",
+        "a": {
+          "x": 0.0,
+          "y": 39.96
+        },
+        "b": {
+          "x": 300.0,
+          "y": 39.96
+        },
+        "angle": 0,
+        "family": "horizontal",
+        "x": -9.960000000000008,
+        "high": 150.0,
+        "low": -150.0,
+        "alignmentErrorMm": 8.881784197001252e-15,
+        "rotation": 90.0,
+        "length": 300.0,
+        "head": 1,
+        "passIndex": 0,
+        "cutStart": 11.757666666666665,
+        "strokeStartY": 162.0,
+        "localStart": {
+          "x": 150.0,
+          "y": 9.960000000000017
+        },
+        "localEnd": {
+          "x": -150.0,
+          "y": 9.959999999999999
+        }
+      },
+      {
+        "id": "H001",
+        "a": {
+          "x": 0.0,
+          "y": 19.98
+        },
+        "b": {
+          "x": 300.0,
+          "y": 19.98
+        },
+        "angle": 0,
+        "family": "horizontal",
+        "x": 10.02000000000001,
+        "high": 150.0,
+        "low": -150.0,
+        "alignmentErrorMm": 8.881784197001252e-15,
+        "rotation": 90.0,
+        "length": 300.0,
+        "head": 2,
+        "passIndex": 0,
+        "cutStart": 11.757666666666665,
+        "strokeStartY": 162.0,
+        "localStart": {
+          "x": 150.0,
+          "y": -10.020000000000001
+        },
+        "localEnd": {
+          "x": -150.0,
+          "y": -10.02000000000002
+        }
+      },
+      {
+        "id": "S001",
+        "a": {
+          "x": 30.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 30.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": -120.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 1,
+        "passIndex": 1,
+        "cutStart": 44.527,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": -120.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": -120.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S002",
+        "a": {
+          "x": 60.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 60.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": -90.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 2,
+        "passIndex": 1,
+        "cutStart": 44.527,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": -90.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": -90.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S003",
+        "a": {
+          "x": 90.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 90.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": -60.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 3,
+        "passIndex": 1,
+        "cutStart": 44.527,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": -60.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": -60.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S004",
+        "a": {
+          "x": 120.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 120.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": -30.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 4,
+        "passIndex": 1,
+        "cutStart": 44.527,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": -30.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": -30.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S005",
+        "a": {
+          "x": 150.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 150.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": 0.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 1,
+        "passIndex": 2,
+        "cutStart": 60.580333333333336,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": 0.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": 0.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S006",
+        "a": {
+          "x": 180.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 180.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": 30.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 2,
+        "passIndex": 2,
+        "cutStart": 60.580333333333336,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": 30.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": 30.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S007",
+        "a": {
+          "x": 210.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 210.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": 60.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 3,
+        "passIndex": 2,
+        "cutStart": 60.580333333333336,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": 60.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": 60.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S008",
+        "a": {
+          "x": 240.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 240.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": 90.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 4,
+        "passIndex": 2,
+        "cutStart": 60.580333333333336,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": 90.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": 90.0,
+          "y": -30.0
+        }
+      },
+      {
+        "id": "S009",
+        "a": {
+          "x": 270.0,
+          "y": 60.0
+        },
+        "b": {
+          "x": 270.0,
+          "y": 0.0
+        },
+        "angle": 90.0,
+        "family": "slanted",
+        "x": 120.0,
+        "high": 30.0,
+        "low": -30.0,
+        "alignmentErrorMm": 0.0,
+        "rotation": 0.0,
+        "length": 60.0,
+        "head": 1,
+        "passIndex": 3,
+        "cutStart": 72.63366666666667,
+        "strokeStartY": 42.0,
+        "localStart": {
+          "x": 120.0,
+          "y": 30.0
+        },
+        "localEnd": {
+          "x": 120.0,
+          "y": -30.0
+        }
+      }
+    ],
+    "operations": [
+      {
+        "kind": "slab_home_seek",
+        "duration": 0.5,
+        "start": 0.0,
+        "end": 0.5,
+        "passIndex": -1,
+        "fromY": 170.0,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0,
+        "fromX": [
+          -90.0,
+          -30.0,
+          30.0,
+          90.0
+        ],
+        "toX": [
+          -90.0,
+          -30.0,
+          30.0,
+          90.0
+        ],
+        "until": "slab_zero_switch",
+        "pulses": null,
+        "direction": "toward_zero"
+      },
+      {
+        "kind": "slab_home_reference",
+        "duration": 0.35,
+        "start": 0.5,
+        "end": 0.85,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          -90.0,
+          -30.0,
+          30.0,
+          90.0
+        ],
+        "toX": [
+          -90.0,
+          -30.0,
+          30.0,
+          90.0
+        ],
+        "resetPulse": 0,
+        "requires": "slab_zero_switch"
+      },
+      {
+        "kind": "init_lift",
+        "duration": 0.5,
+        "start": 0.85,
+        "end": 1.35,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          -90.0,
+          -30.0,
+          30.0,
+          90.0
+        ],
+        "toX": [
+          -90.0,
+          -30.0,
+          30.0,
+          90.0
+        ]
+      },
+      {
+        "kind": "init_seek",
+        "duration": 3.175,
+        "start": 1.35,
+        "end": 4.525,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          -90.0,
+          -30.0,
+          30.0,
+          90.0
+        ],
+        "toX": [
+          164,
+          176,
+          188,
+          200
+        ]
+      },
+      {
+        "kind": "init_contact",
+        "duration": 0.35,
+        "start": 4.525,
+        "end": 4.875,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          164,
+          176,
+          188,
+          200
+        ],
+        "toX": [
+          164,
+          176,
+          188,
+          200
+        ]
+      },
+      {
+        "kind": "init_backoff",
+        "duration": 0.4,
+        "start": 4.875,
+        "end": 5.275,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          164,
+          176,
+          188,
+          200
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ]
+      },
+      {
+        "kind": "init_latch",
+        "duration": 0.8,
+        "start": 5.275,
+        "end": 6.075,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          164,
+          176,
+          188,
+          200
+        ]
+      },
+      {
+        "kind": "init_reference",
+        "duration": 0.35,
+        "start": 6.075,
+        "end": 6.425,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          164,
+          176,
+          188,
+          200
+        ],
+        "toX": [
+          164,
+          176,
+          188,
+          200
+        ]
+      },
+      {
+        "kind": "init_release",
+        "duration": 0.4,
+        "start": 6.425,
+        "end": 6.825,
+        "passIndex": -1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          164,
+          176,
+          188,
+          200
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ]
+      },
+      {
+        "kind": "rotate",
+        "duration": 2.0,
+        "start": 6.825,
+        "end": 8.825,
+        "passIndex": 0,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 90.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ]
+      },
+      {
+        "kind": "position",
+        "duration": 2.832666666666667,
+        "start": 8.825,
+        "end": 11.657666666666666,
+        "passIndex": 0,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 90.0,
+        "toAngle": 90.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "approach",
+        "duration": 0.1,
+        "start": 11.657666666666666,
+        "end": 11.757666666666665,
+        "passIndex": 0,
+        "fromY": 170,
+        "toY": 162.0,
+        "fromAngle": 90.0,
+        "toAngle": 90.0,
+        "fromX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "cut",
+        "duration": 16.2,
+        "start": 11.757666666666665,
+        "end": 27.957666666666665,
+        "passIndex": 0,
+        "fromY": 162.0,
+        "toY": -162.0,
+        "fromAngle": 90.0,
+        "toAngle": 90.0,
+        "fromX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "lift",
+        "duration": 0.45,
+        "start": 27.957666666666665,
+        "end": 28.407666666666664,
+        "passIndex": 0,
+        "fromY": -162.0,
+        "toY": -162.0,
+        "fromAngle": 90.0,
+        "toAngle": 90.0,
+        "fromX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "return",
+        "duration": 3.32,
+        "start": 28.407666666666664,
+        "end": 31.727666666666664,
+        "passIndex": 0,
+        "fromY": -162.0,
+        "toY": 170,
+        "fromAngle": 90.0,
+        "toAngle": 90.0,
+        "fromX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "x_home_seek",
+        "duration": 2.832666666666667,
+        "start": 31.727666666666664,
+        "end": 34.56033333333333,
+        "passIndex": 0,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 90.0,
+        "toAngle": 90.0,
+        "fromX": [
+          -9.960000000000008,
+          10.02000000000001,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "until": "x_limit_switches",
+        "pulses": null
+      },
+      {
+        "kind": "x_home_reference",
+        "duration": 0.35,
+        "start": 34.56033333333333,
+        "end": 34.910333333333334,
+        "passIndex": 0,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 90.0,
+        "toAngle": 90.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "resetPulse": 0,
+        "requires": "x_limit_switches"
+      },
+      {
+        "kind": "slab_home_seek",
+        "duration": 3.0,
+        "start": 34.910333333333334,
+        "end": 37.910333333333334,
+        "passIndex": 1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 90.0,
+        "toAngle": 0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "until": "slab_zero_switch",
+        "pulses": null,
+        "direction": "toward_zero"
+      },
+      {
+        "kind": "slab_home_reference",
+        "duration": 0.35,
+        "start": 37.910333333333334,
+        "end": 38.260333333333335,
+        "passIndex": 1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "resetPulse": 0,
+        "requires": "slab_zero_switch"
+      },
+      {
+        "kind": "position",
+        "duration": 4.666666666666667,
+        "start": 38.260333333333335,
+        "end": 42.927,
+        "passIndex": 1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0,
+        "toAngle": 0.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ]
+      },
+      {
+        "kind": "approach",
+        "duration": 1.6,
+        "start": 42.927,
+        "end": 44.527,
+        "passIndex": 1,
+        "fromY": 170,
+        "toY": 42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ],
+        "toX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ]
+      },
+      {
+        "kind": "cut",
+        "duration": 4.2,
+        "start": 44.527,
+        "end": 48.727000000000004,
+        "passIndex": 1,
+        "fromY": 42.0,
+        "toY": -42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ],
+        "toX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ]
+      },
+      {
+        "kind": "lift",
+        "duration": 0.45,
+        "start": 48.727000000000004,
+        "end": 49.17700000000001,
+        "passIndex": 1,
+        "fromY": -42.0,
+        "toY": -42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ],
+        "toX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ]
+      },
+      {
+        "kind": "return",
+        "duration": 2.12,
+        "start": 49.17700000000001,
+        "end": 51.297000000000004,
+        "passIndex": 1,
+        "fromY": -42.0,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ],
+        "toX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ]
+      },
+      {
+        "kind": "x_home_seek",
+        "duration": 4.666666666666667,
+        "start": 51.297000000000004,
+        "end": 55.96366666666667,
+        "passIndex": 1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          -120.0,
+          -90.0,
+          -60.0,
+          -30.0
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "until": "x_limit_switches",
+        "pulses": null
+      },
+      {
+        "kind": "x_home_reference",
+        "duration": 0.35,
+        "start": 55.96366666666667,
+        "end": 56.31366666666667,
+        "passIndex": 1,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "resetPulse": 0,
+        "requires": "x_limit_switches"
+      },
+      {
+        "kind": "position",
+        "duration": 2.6666666666666665,
+        "start": 56.31366666666667,
+        "end": 58.980333333333334,
+        "passIndex": 2,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ]
+      },
+      {
+        "kind": "approach",
+        "duration": 1.6,
+        "start": 58.980333333333334,
+        "end": 60.580333333333336,
+        "passIndex": 2,
+        "fromY": 170,
+        "toY": 42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ],
+        "toX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ]
+      },
+      {
+        "kind": "cut",
+        "duration": 4.2,
+        "start": 60.580333333333336,
+        "end": 64.78033333333333,
+        "passIndex": 2,
+        "fromY": 42.0,
+        "toY": -42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ],
+        "toX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ]
+      },
+      {
+        "kind": "lift",
+        "duration": 0.45,
+        "start": 64.78033333333333,
+        "end": 65.23033333333333,
+        "passIndex": 2,
+        "fromY": -42.0,
+        "toY": -42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ],
+        "toX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ]
+      },
+      {
+        "kind": "return",
+        "duration": 2.12,
+        "start": 65.23033333333333,
+        "end": 67.35033333333334,
+        "passIndex": 2,
+        "fromY": -42.0,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ],
+        "toX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ]
+      },
+      {
+        "kind": "x_home_seek",
+        "duration": 2.6666666666666665,
+        "start": 67.35033333333334,
+        "end": 70.01700000000001,
+        "passIndex": 2,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          0.0,
+          30.0,
+          60.0,
+          90.0
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "until": "x_limit_switches",
+        "pulses": null
+      },
+      {
+        "kind": "x_home_reference",
+        "duration": 0.35,
+        "start": 70.01700000000001,
+        "end": 70.367,
+        "passIndex": 2,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "resetPulse": 0,
+        "requires": "x_limit_switches"
+      },
+      {
+        "kind": "position",
+        "duration": 0.6666666666666666,
+        "start": 70.367,
+        "end": 71.03366666666668,
+        "passIndex": 3,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "approach",
+        "duration": 1.6,
+        "start": 71.03366666666668,
+        "end": 72.63366666666667,
+        "passIndex": 3,
+        "fromY": 170,
+        "toY": 42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "cut",
+        "duration": 4.2,
+        "start": 72.63366666666667,
+        "end": 76.83366666666667,
+        "passIndex": 3,
+        "fromY": 42.0,
+        "toY": -42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "lift",
+        "duration": 0.45,
+        "start": 76.83366666666667,
+        "end": 77.28366666666668,
+        "passIndex": 3,
+        "fromY": -42.0,
+        "toY": -42.0,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "return",
+        "duration": 2.12,
+        "start": 77.28366666666668,
+        "end": 79.40366666666668,
+        "passIndex": 3,
+        "fromY": -42.0,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ]
+      },
+      {
+        "kind": "x_home_seek",
+        "duration": 0.6666666666666666,
+        "start": 79.40366666666668,
+        "end": 80.07033333333335,
+        "passIndex": 3,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          120.0,
+          172.0,
+          184.0,
+          196.0
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "until": "x_limit_switches",
+        "pulses": null
+      },
+      {
+        "kind": "x_home_reference",
+        "duration": 0.35,
+        "start": 80.07033333333335,
+        "end": 80.42033333333335,
+        "passIndex": 3,
+        "fromY": 170,
+        "toY": 170,
+        "fromAngle": 0.0,
+        "toAngle": 0.0,
+        "fromX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "toX": [
+          160,
+          172,
+          184,
+          196
+        ],
+        "resetPulse": 0,
+        "requires": "x_limit_switches"
+      }
+    ],
+    "initializationEnd": 6.825,
+    "duration": 80.42033333333335,
+    "horizontalCount": 2,
+    "slantedCount": 9,
+    "notebookPasses": 4,
+    "warnings": [
+      "외곽 0.1 mm 이내 수평·수직선 1개 그리기 생략"
+    ],
+    "skippedLines": [
+      {
+        "line_id": "H003",
+        "x_start_mm": 0.0,
+        "y_start_mm": 59.94,
+        "x_end_mm": 300.0,
+        "y_end_mm": 59.94,
+        "draw_enabled": false,
+        "skip_reason": "edge_top_within_0.1mm"
+      }
+    ],
+    "activeLines": [
+      {
+        "line_id": "H001",
+        "x_start_mm": 0.0,
+        "y_start_mm": 19.98,
+        "x_end_mm": 300.0,
+        "y_end_mm": 19.98,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "H002",
+        "x_start_mm": 0.0,
+        "y_start_mm": 39.96,
+        "x_end_mm": 300.0,
+        "y_end_mm": 39.96,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S001",
+        "x_start_mm": 30.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 30.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S002",
+        "x_start_mm": 60.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 60.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S003",
+        "x_start_mm": 90.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 90.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S004",
+        "x_start_mm": 120.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 120.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S005",
+        "x_start_mm": 150.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 150.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S006",
+        "x_start_mm": 180.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 180.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S007",
+        "x_start_mm": 210.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 210.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S008",
+        "x_start_mm": 240.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 240.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      },
+      {
+        "line_id": "S009",
+        "x_start_mm": 270.0,
+        "y_start_mm": 60.0,
+        "x_end_mm": 270.0,
+        "y_end_mm": 0.0,
+        "draw_enabled": true,
+        "skip_reason": ""
+      }
+    ],
+    "edgeThreshold": 0.1,
+    "pythonMotorProgram": true,
+    "homingPolicy": "x-every-return-slab-before-angle-change",
+    "rotaryDrive": {
+      "motorTeeth": 32,
+      "tableTeeth": 48,
+      "ratio": 1.5,
+      "pulsesPerRev": 1600,
+      "pulsesPerSlabRev": 2400.0,
+      "anglePerPulse": 0.15,
+      "initialAngleDeg": 0
+    }
+  },
+  "bom_rotary": {
+    "motor_pulley": "BOM-026 / 32T / P6.35",
+    "table_pulley": "BOM-025 / 48T / P20",
+    "belt": "BOM-027 / HTBN633S3M-150",
+    "mounting_assumption": "32T on motor, 48T on slab; no additional gearbox"
+  }
+}

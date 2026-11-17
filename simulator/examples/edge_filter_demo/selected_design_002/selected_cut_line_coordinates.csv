@@ -1,0 +1,13 @@
+﻿design_id,line_id,line_type,x_start_mm,y_start_mm,x_end_mm,y_end_mm,cut_length_mm,cut_angle_deg,draw_enabled,skip_reason
+2,H001,horizontal,0.0,19.98,300.0,19.98,300.0,0.0,True,
+2,H002,horizontal,0.0,39.96,300.0,39.96,300.0,0.0,True,
+2,H003,horizontal,0.0,59.94,300.0,59.94,300.0,0.0,False,edge_top_within_0.1mm
+2,S001,slanted,30.0,60.0,30.0,0.0,60.0,90.0,True,
+2,S002,slanted,60.0,60.0,60.0,0.0,60.0,90.0,True,
+2,S003,slanted,90.0,60.0,90.0,0.0,60.0,90.0,True,
+2,S004,slanted,120.0,60.0,120.0,0.0,60.0,90.0,True,
+2,S005,slanted,150.0,60.0,150.0,0.0,60.0,90.0,True,
+2,S006,slanted,180.0,60.0,180.0,0.0,60.0,90.0,True,
+2,S007,slanted,210.0,60.0,210.0,0.0,60.0,90.0,True,
+2,S008,slanted,240.0,60.0,240.0,0.0,60.0,90.0,True,
+2,S009,slanted,270.0,60.0,270.0,0.0,60.0,90.0,True,

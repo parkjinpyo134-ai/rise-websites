@@ -1,0 +1,12 @@
+design_id,line_id,line_type,x_start_mm,y_start_mm,x_end_mm,y_end_mm
+1,H001,horizontal,0,20,300,20
+1,H002,horizontal,0,40,300,40
+1,S001,slanted,30,0,30,60
+1,S002,slanted,60,0,60,60
+1,S003,slanted,90,0,90,60
+1,S004,slanted,120,0,120,60
+1,S005,slanted,150,0,150,60
+1,S006,slanted,180,0,180,60
+1,S007,slanted,210,0,210,60
+1,S008,slanted,240,0,240,60
+1,S009,slanted,270,0,270,60

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="RISE ICT 프로젝트의 설계, 시뮬레이션, 구동 영상과 결과 사진을 한눈에 확인하세요.">
+  <title>RISE ICT · 결과물 라이브러리</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="media-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand"><span class="emoji" aria-hidden="true">📁</span><strong>RISE ICT</strong><span class="brand-sub">결과물 라이브러리</span></div>
+      <button class="quiet-button" id="help-open" type="button">이용 안내</button>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title"><div class="eyebrow">DESIGN & EXPERIMENT</div><h1 id="page-title">설계부터 실제 구동까지, 한눈에.</h1><p>세 가지 설계의 배치도, 시뮬레이션과 실제 결과를 살펴보세요.</p></section>
+      <div class="choices" role="group" aria-label="설계 선택">
+        <button class="choice" data-design="1" aria-pressed="true"><span class="number">01</span><span><strong>1번 설계</strong><small>사진 2 · 영상 6</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+        <button class="choice" data-design="2" aria-pressed="false"><span class="number">02</span><span><strong>2번 설계</strong><small>사진 2 · 영상 4</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+        <button class="choice" data-design="3" aria-pressed="false"><span class="number">03</span><span><strong>3번 설계</strong><small>사진 2 · 영상 6</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+      </div>
+      <section aria-labelledby="design-title">
+        <div class="section-heading"><h2 id="design-title">1번 설계</h2><span class="section-note">설계 결과와 실험 기록</span></div>
+        <div class="tabs" role="tablist" aria-label="결과 유형">
+          <button role="tab" id="tab-layout" data-kind="layout" aria-selected="true" aria-controls="media-panel" tabindex="0">배치도 · 수치</button>
+          <button role="tab" id="tab-simulation" data-kind="simulation" aria-selected="false" aria-controls="media-panel" tabindex="-1">시뮬레이션</button>
+          <button role="tab" id="tab-video" data-kind="video" aria-selected="false" aria-controls="media-panel" tabindex="-1">구동 영상</button>
+          <button role="tab" id="tab-photo" data-kind="photo" aria-selected="false" aria-controls="media-panel" tabindex="-1">결과 사진</button>
+        </div>
+        <div id="media-panel" role="tabpanel" aria-labelledby="tab-layout">
+          <div class="workspace"><div class="viewer">
+            <div class="stage" id="media-stage"></div>
+            <div class="caption"><span id="media-caption"></span><div class="viewer-tools"><span id="media-count"></span><button type="button" class="quiet-button" id="zoom-open">크게 보기</button></div></div>
+            <p id="media-status" class="media-status" role="status" aria-live="polite"></p>
+          </div><aside aria-label="미디어 목록"><div class="list-heading" id="list-heading">배치도 · 수치</div><div class="media-list" id="media-list"></div></aside></div>
+        </div>
+      </section>
+      <section class="results" aria-labelledby="photos-title"><div><h2 id="photos-title"><span class="emoji" aria-hidden="true">📷</span> 실제 결과물</h2><p>사진을 선택하면 위에서 크게 볼 수 있어요.</p></div><div class="photo-row" id="photo-row"></div></section>
+    </main>
+    <footer><span>RISE ICT PROJECT <span class="footer-separator">·</span> 시스템 결과 아카이브</span><span class="offline-badge"><span aria-hidden="true"></span>오프라인 열람 가능</span></footer>
+  </div>
+  <dialog id="image-dialog" class="image-dialog" aria-labelledby="zoom-title"><div class="dialog-heading"><h2 id="zoom-title">이미지 크게 보기</h2><button type="button" class="quiet-button" id="zoom-close">닫기 ✕</button></div><div id="zoom-content"></div><div class="dialog-navigation"><button type="button" class="quiet-button" id="zoom-prev">이전 사진</button><span id="zoom-position"></span><button type="button" class="quiet-button" id="zoom-next">다음 사진</button></div></dialog>
+  <dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title"><div class="dialog-heading"><h2 id="help-title">이용 안내</h2><button type="button" class="quiet-button" id="help-close">닫기 ✕</button></div><ol><li>위에서 설계를 고르고 원하는 결과 유형을 선택하세요.</li><li>영상은 재생 버튼을 눌러 시작하세요. 음량·구간 이동·전체화면은 영상 하단에서 조절할 수 있어요.</li><li>시뮬레이션 GIF는 탭을 열면 자동으로 움직여요.</li><li>이미지는 ‘크게 보기’로 확대하고, 결과 사진은 좌우로 넘길 수 있어요.</li></ol><h3>다른 사람에게 전달하려면</h3><p>배포용 ZIP 전체를 보내세요. 받는 분은 <strong>압축을 모두 푼 뒤 index.html을 Chrome 또는 Edge로 열면</strong> 됩니다. 설치와 인터넷 연결이 필요하지 않습니다.</p><p>index.html만 보내거나 압축파일 안에서 바로 열면 영상과 이미지가 표시되지 않을 수 있어요.</p></dialog>
+  <noscript>이 뷰어는 JavaScript가 필요합니다. Chrome 또는 Edge에서 index.html을 열어 주세요.</noscript>
+</body>
+</html>

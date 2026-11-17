@@ -1,0 +1,13 @@
+Bundled font notices
+
+Pretendard v1.3.9
+Copyright (c) 2021, Kil Hyung-jin (https://github.com/orioncactus/pretendard), with Reserved Font Name Pretendard.
+Source: https://github.com/orioncactus/pretendard/tree/v1.3.9
+License: Pretendard-LICENSE.txt (SIL Open Font License 1.1)
+
+Tossface
+Copyright (c) 2022, 2023 Viva Republica, with Reserved Font Name Tossface.
+Source: https://github.com/toss/tossface
+Copyright information: https://toss.im/tossface/copyright
+License: Tossface-LICENSE.txt
+The original WOFF2 font files are bundled without modification.
